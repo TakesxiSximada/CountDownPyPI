@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  elasticsearch:
+    image: "takesxisximada/elasticsearch"
+    volumes_from:
+      - VOLUME-elasticsearch
+
+  VOLUME-elasticsearch:
+    image: busybox
+    volumes:
+      - /var/catastrophe/data/elasticsearch/usr/share/elasticsearch/data:/usr/share/elasticsearch/data
+      - /var/catastrophe/conf/elasticsearch/usr/share/elasticsearch/config:/usr/share/elasticsearch/config

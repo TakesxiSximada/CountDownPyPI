@@ -1,0 +1,12 @@
+volumes:
+  elasticsearch-DATA:
+    hostpath: ${here}/data/elasticsearch
+    vboxpath: /var/catastrophe/data/elasticsearch
+    directory:
+      - ${here}/data/elasticsearch/usr/share/elasticsearch/data
+
+  elasticsearch-CONF:
+    hostpath: ${here}/conf/elasticsearch
+    vboxpath: /var/catastrophe/conf/elasticsearch
+    directory:
+      - ${here}/conf/elasticsearch/usr/share/elasticsearch/config
