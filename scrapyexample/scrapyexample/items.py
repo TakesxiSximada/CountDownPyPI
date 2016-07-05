@@ -8,7 +8,8 @@
 import scrapy
 
 
-class ScrapyexampleItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class ReleaseItem(scrapy.Item):
+    name = scrapy.Field()
+    version = scrapy.Field()
+    link = scrapy.Field()
+    summary = scrapy.Field()

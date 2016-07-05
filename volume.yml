@@ -2,6 +2,9 @@ volumes:
   elasticsearch-DATA:
     hostpath: ${here}/data/elasticsearch
     vboxpath: /var/catastrophe/data/elasticsearch
+    uid: 105
+    gid: 108
+    dmode: 755
     directory:
       - ${here}/data/elasticsearch/usr/share/elasticsearch/data
 
